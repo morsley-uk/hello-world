@@ -11,15 +11,15 @@ dotnet clean
 ```
 
 ```
-dotnet restore
+dotnet restore --force --no-cache
 ```
 
 ```
-dotnet build --configuration Release --no-restore
+dotnet build --force --configuration Release --no-restore
 ```
 
 ```
-dotnet release --configuration Release --no-build --no-restore
+dotnet publish --force --configuration Release --no-restore --no-build --output Publish
 ```
 
 ```
